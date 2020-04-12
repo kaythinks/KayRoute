@@ -4,7 +4,9 @@
 
 -- Run composer dump-autoload
 
--- The library can be used this way for example;
+-- Create an index.php file 
+
+-- The library can be used this way for example by putting the code below in the index.php file and serving your in-built PHP server (php -S localhost:8000 );
 
     <?php
 
@@ -15,6 +17,8 @@
 	Router::get('/',function(){
 	    var_dump('I got here');
     });
+
+    Router::get('/','HomeController@getHome');
 
 -- NOTE :- You must have a namespace structure like this App\Controllers\{The Controller File} to use it with a Controller file. This package has support for autowiring.
 
