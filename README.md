@@ -17,3 +17,5 @@
     });
 
 -- NOTE :- You must have a namespace structure like this App\Controllers\{The Controller File} to use it with a Controller file. This package has support for autowiring.
+
+	To read more about the Router methods, click this link <a href="https://github.com/kaythinks/KayRoute/wiki/Router">Wiki</a>
