@@ -14,7 +14,7 @@
 
 	use Kaythinks\KayRoute\Router;
 
-	Router::get('/',function(){
+	Router::get('/test',function(){
 	    var_dump('I got here');
     });
 
