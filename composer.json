@@ -1,0 +1,23 @@
+{
+    "name": "kaythinks/kayroute",
+    "keywords": ["PHP Routing", "routing", "KayRoute"],
+    "description": "This is a PHP routing package that can be plugged with any PHP package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Odole Kayode",
+            "email": "kaythinks@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Kaythinks\\": "app/",
+            "Tests\\":"tests/"
+        }
+    },
+    "prefer-stable": true,
+    "require": {
+         "php": "^7.0"
+    }
+}
