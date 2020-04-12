@@ -3,6 +3,6 @@
 use Kaythinks\KayRoute\Router;
 
 
-Router::get('/demo',function(){
-	var_dump('I got here');
+Router::get('/demo/{id}',function(){
+	var_dump($_REQUEST['id']);
 });
