@@ -2,6 +2,8 @@
 
 namespace Kaythinks\KayRoute;
 
+use Exception;
+
 class Resolver {
 
 	/**
@@ -18,7 +20,7 @@ class Resolver {
 
 		if( ! $reflector->isInstantiable())
  		{
- 			throw new Exception("Erm.. Cannot resolve the unkown!?");
+ 			throw new Exception("Erm.. Cannot resolve the unknown!?");
  		}
 		
  		$constructor = $reflector->getConstructor();
@@ -76,6 +78,6 @@ class Resolver {
 			return $parameter->getDefaultValue();
 		}
 		
-		throw new Exception("Erm.. Cannot resolve the unkown!?");
+		throw new Exception("Erm.. Cannot resolve the unknown!?");
 	}
 }
