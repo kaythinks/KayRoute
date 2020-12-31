@@ -1,0 +1,1 @@
+- Added PHP 8 Support (31/12/2020)
